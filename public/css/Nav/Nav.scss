@@ -1,0 +1,78 @@
+.nav {
+    @apply tracking-[2px] z-20 w-full h-[65px] fixed leading-[65px] text-center py-[20px];
+
+    &__logo {
+        @apply float-left w-auto h-auto pl-12;
+    }
+
+    &__logo img {
+        @apply w-[54px] h-[54px]
+    }
+
+    &__list {
+        @apply h-[65px] float-right;
+    }
+
+    &__list ul {
+        @apply w-full h-[65px] flex list-none items-center m-0 p-0;
+    }
+
+    &__list ul li {
+        @apply w-auto h-[65px] p-0 flex items-center pr-12;
+    }
+
+    &__list ul li a {
+        @apply no-underline text-white leading-[65px] flex items-center text-[23.4px] transition-all;
+    }
+
+    &__list ul li a:hover{
+        @apply text-[#FF8C00] transition-all;
+    }
+}
+
+.nav {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+@media screen and (max-width: 1800px) {
+    .nav {
+        &__list ul li a {
+            @apply text-[23.4px]
+        }
+    }
+    nav svg {
+        @apply w-[38px] h-[35px]
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .nav {
+        &__list ul li a {
+            @apply text-[16px]
+        }
+    }
+    nav svg {
+        @apply w-[36px] h-[33px]
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav {
+        &__list ul li a {
+            @apply text-[12.8px]
+        }
+    }
+    nav svg {
+        @apply w-[34px] h-[31px]
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        &__list {
+            @apply w-full h-0 overflow-hidden
+        }
+    }
+}

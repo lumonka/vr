@@ -1,0 +1,148 @@
+.intro {
+    overflow: hidden;
+    position: relative;
+}
+
+.intro::after{
+    content: "";
+    display: block;
+
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5),rgb(0, 0, 0));
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.intro__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.intro_text_h1{
+    font-size: 600%;
+    font-weight:100;
+    margin: 0;
+    color: #fff;
+}
+.intro_text_h4{
+    font-size: 400%;
+    font-weight:100;
+    margin: 0;
+    color: #fff;
+}
+
+.intro__fon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    z-index: 1;
+
+    height: 100vh;
+}
+
+.intro__v-fon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.button{
+
+    text-decoration: none;
+    color: #fff;
+    width: 350px;
+    height: 60px;
+    display: flex;
+    margin: 20px;
+    padding: 0 20px;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#9747FF, #493F89 );
+    font-size: 23px;
+    border-radius: 40px;
+    transition: 0.5s;
+    z-index: 3;
+}
+.button:hover{
+    transition: 0.5s;
+
+    box-shadow: 0 0 20px #FF8C00;
+    background: linear-gradient(45deg, #FF8C00, #FF5C00);
+}
+.button1{
+    text-decoration: none;
+    color: #fff;
+    width: 450px;
+    height: 80px;
+    display: flex;
+    margin: 20px;
+    padding: 0 20px;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#9747FF, #493F89 );
+    font-size: 34px;
+    border-radius: 40px;
+    transition: 0.5s;
+    z-index: 3;
+}
+.button1:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background: linear-gradient(45deg, #FF8C00, #FF5C00);
+    box-shadow: 0 0 20px #FF8C00;
+}
+
+.fs-m {
+    font-size: 38px;
+}
+.fs-vb{
+    font-size: 24px;
+}
+.fs-vs{
+    font-size: 40px;
+}
+
+@media screen and (min-width: 1801px) {
+    .fs-m {
+        font-size: 29px;
+    }
+    .fs-vb{
+        font-size: 63px;
+    }
+    .fs-vs{
+        font-size: 40px;
+    }
+    .button1{
+        width: 350px;
+        height: 80px;
+        font-size: 34px;
+    }
+    .button{
+        width: 250px;
+        height: 60px;
+        font-size: 28px;
+    }
+}
+

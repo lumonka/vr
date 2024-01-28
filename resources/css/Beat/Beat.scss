@@ -1,0 +1,126 @@
+body {
+    overflow-x: hidden;
+}
+.img-0{
+    margin-left: 130%;
+    width: 120%;
+    height: 120%;
+}
+.img-1{
+    margin-left: -50px;
+    margin-top: -50px;
+}
+.img-2{
+    margin-left: -250px;
+    margin-top: -250px;
+}
+.img-1{
+    margin-left: -10px;
+    margin-top: -290px;
+}
+.button{
+    text-decoration: none;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    margin: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#9747FF, #493F89 );
+    font-size: 23px;
+    border-radius: 20px;
+    transition: 0.4s;
+    z-index: 3;
+    border: 0;
+}
+.button:hover{
+    transition: 0.4s;
+    background: linear-gradient(45deg, #FF8C00, #FF5C00);
+    box-shadow: 0 0 20px #FF8C00;
+    border: 0;
+    cursor: pointer;
+}
+
+
+::-webkit-calendar-picker-indicator{
+    padding-right: 10px;
+}
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 10px  0 10px  10px ;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    /* border-bottom: 1px solid #000000; */
+    outline: none;
+    background: #F8F1FF;
+    border-radius: 5px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+.imggi{
+    background: url(../../media/images/kD9twhD52Ow.jpg);
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+
+    display: flex;
+    align-items: end;
+}
+
+.margiinend{
+    margin: 2vh;
+}
+
+.button-send {
+    text-decoration: none;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    margin: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#9747FF, #493F89 ) !important;
+    font-size: 23px;
+    border-radius: 20px;
+    transition: 0.4s;
+    z-index: 3;
+    border: 0;
+}
+
+@media screen and (min-width: 1500px) {
+    .wt-b {
+        width: 75vh;
+        height: 64vh;
+        font-size: 20px;
+    }
+
+    .wt-m {
+        width: 75vh;
+        height: 30vh;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1801px) {
+    .button {
+        width: 250px;
+        height: 60px;
+        font-size: 28px;
+        background: #1a202c;
+    }
+}
+

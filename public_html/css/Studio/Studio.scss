@@ -1,0 +1,72 @@
+.ban-ban {
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group {
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.item {
+    width: 15vw;
+    height: 75vh;
+    background-position: center;
+    background-size: 75vh;
+    margin: 1vw;
+    border-radius: 3vw;
+    display: inline-block;
+    cursor: pointer;
+    background-size: cover;
+    z-index: 3;
+}
+.flex-slider{
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+    height: 80vh;
+    width: 100%;
+
+}
+
+.flex-slider-item-img{
+    width: 100%;
+    height: auto;
+}
+.active:hover{
+    flex-basis: 50%;
+}
+.flex-slider-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background:linear-gradient(to right, rgba(0, 0, 0,0.4), rgba(0, 0, 0,0.3)),
+    url('https://upload.wikimedia.org/wikipedia/ru/thumb/9/94/%D0%93%D0%B8%D0%B3%D0%B0%D1%87%D0%B0%D0%B4.jpg/640px-%D0%93%D0%B8%D0%B3%D0%B0%D1%87%D0%B0%D0%B4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 25%;
+    transition: 1000ms ease-in-out;
+}
+.flex-slider-item-text{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.flex-slider-item-text{
+    font-weight: 100;
+    font-size: 24px;
+    transition: 350ms ease-in-out;
+}
+.active:hover .flex-slider-item-text{
+    font-size: 2.4vw;
+
+}
+.flex-slider-item-text{
+    color: #fff;
+}
